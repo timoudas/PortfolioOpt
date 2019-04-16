@@ -6,6 +6,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from forex_python.converter import CurrencyRates
 
+'''Compile'''
+
 df = pd.DataFrame()
 
 TICKERS = ['ABB.ST', 'ALFA.ST', 'AMD', 'SAAB-B.ST', 'ERIC-B.ST',
@@ -35,6 +37,10 @@ risk_free_rate = 0.0178
 cov_matrix.dtypes
 
 display_simulated_ef_with_random(cov_matrix, mean_returns, num_portfolios, risk_free_rate)
+
+'''End of Compilation'''
+
+'''FUNCTIONS'''
 
 def get_ticker(TICKER, DATE_FROM, DATE_TO, DATAFRAME, DF_TICKER):
     '''Gets historical DATA from a TICKER and given range, and then appends it to
